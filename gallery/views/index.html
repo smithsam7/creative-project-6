@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+
+<body class="back-pages">
+    <h2 id="welcomeText">Personal Top 5 Movies!</h2><br />
+    <div class="row">
+        <div class="column-user">
+            <div class="form-container" ng-controller="myController">
+                <p>Currently Logged in as
+                    <u><%= username %></u>
+                        <br />
+                        <div class="links"><a id="logoutLink" href="/logout">Logout</a></div><br />
+                        <div class="links"><a id="editLink" href="/user">Edit User</a></div><br />
+                </p>
+            </div>
+            <hr>
+            <div class="msg">
+                <span id="indexMsg">
+        <%= msg %>
+    </span>
+                <hr>
+
+            </div>
+
+        </div>
+        <div class="column-user messagebox">
+            <span id="movie1Text">
+    Movie #1
+        <%= movie1 %>
+    </span><br />
+            <span id="movie2Text">
+    Movie #2
+        <%= movie2 %>
+    </span><br />
+            <span id="movie3Text">
+    Movie #3
+        <%= movie3 %>
+    </span><br />
+            <span id="movie4Text">
+    Movie #4
+        <%= movie4 %>
+    </span><br />
+            <span id="movie5Text">
+    Movie #5
+        <%= movie5 %>
+    </span>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+
+</html>

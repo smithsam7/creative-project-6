@@ -1,0 +1,30 @@
+nohup: ignoring input
+before / Route
+Port: 8080
+Connected
+(node:32735) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-11T16:20:45.158Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c108bc192d87b7c352edd13',
+  username: 'sam',
+  msg: 'Authenticated as sam',
+  movie1: 'Batman',
+  movie2: 'Avengers',
+  movie3: 'Thor',
+  movie4: 'Robin Hood',
+  movie5: 'SpiderMan' }
+/ Route if user
+[0mGET / [36m304 [0m16.013 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m3.681 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m6.890 ms - -[0m
+[0mGET /user/profile [36m304 [0m16.682 ms - -[0m
+/logout Route
+[0mGET /logout [36m302 [0m7.575 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m2.126 ms - 897[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.041 ms - -[0m
